@@ -1,10 +1,9 @@
 from apiclient.discovery import build
-
+import pandas as pd
 import json
+
 with open('secret.json') as f:
     secret = json.load(f)
-
-import pandas as pd
 
 DEVELOPER_KEY = secret['KEY']
 YOUTUBE_API_SERVICE_NAME = "youtube"
